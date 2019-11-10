@@ -27,12 +27,12 @@
 </header>
 <!-- part 1-->
 <div class="area_info">
-    <h3 class="text-muted">首先是介绍自己呀!</h3><a name="personal"></a>
+    <h3 class="text-muted"><img src="img/nanhai.png" width="55px" height="55px" align="top">首先是介绍自己呀!</h3><a name="personal"></a>
 </div>
 <div class="personal" >
     <div class="left_container">
     <div class="profiles">
-        <p><img src="img/avatar.jpeg" align="top" width="100px" height="100px"><strong>刘宗源</strong></p>
+        <p><img src="img/avatar.jpeg" align="top" width="100px" height="100px"> <strong style="font-size: 30px;font-family: 'Yuanti SC'">刘宗源</strong></p>
         <p class="text-muted">一名即将离校的<b class="text-primary">大三</b>男孩，就读于<b class="text-primary">江西现代职业技术学院</b>，所学专业是<b class="text-primary">软件技术</b></p>
         <p class="text-muted">出生于1999-10-10,江西上饶</p>
         <p class="text-muted">是一个乐观开朗，积极向上的男孩子，努力学习新知识，新技术，踏实学习，使自己的编程能力更强</p>
@@ -55,8 +55,7 @@
 </div>
 <!-- part 2-->
 <div class="area_info">
-    <h3 class="text-muted">接下来是介绍</h3>
-    <h4 class="text-muted">在校独立做的项目 >></h4>
+    <h3 class="text-muted"><img src="img/wangzhanxiangmu.png" width="55px" height="55px" align="top">接下来是介绍在校独立做的小项目 >></h3>
 </div>
 <div class="projects">
 
@@ -66,7 +65,7 @@
             <img src="img/hopeless1.png">
         </div>
         <div class="pro_desc">
-            <h4>无望-个人树洞</h4><span class="text-muted">是以匿名社区为主，进行用户发布内容，宣泄中心</span>
+            <h4><img src="img/shudong.png" width="50px" height="50px" align="top" />无望-个人树洞</h4><span class="text-muted">是以匿名社区为主，进行用户发布内容，宣泄中心</span>
             <p><strong>项目时间：</strong>2019-08 至 2019-10</p>
             <p><strong>前端技术：</strong>静态页面使用Html+CSS+JavaScript，使用css,media属性实现响应式设计，框架使用vue.js，数据交互使用Ajax</p>
             <p><strong>后台数据：</strong>后台使用PHP+Mysql进行数据的增删改查</p>
@@ -80,7 +79,7 @@
             <img src="img/fruit1.png">
         </div>
         <div class="pro_desc">
-            <h4>时令水果</h4><span class="text-muted">关于水果主题，提供部分当季水果内容，供参考</span>
+            <h4><img src="img/shuiguo.png" width="50px" height="50px" align="top" />时令水果</h4><span class="text-muted">关于水果主题，提供部分当季水果内容，供参考</span>
             <p><strong>项目时间：</strong>2019-10 至 当月</p>
             <p><strong>前端技术：</strong>静态页面使用Html+CSS+JavaScript，框架使用Bootstrap,使用JQuery实现部分动画效果与事件发生</p>
             <p><strong>后台数据：</strong>该项目没有采用后台数据</p>
@@ -93,7 +92,7 @@
             <img src="img/phones1.png">
         </div>
         <div class="pro_desc">
-            <h4>手机商城</h4><span class="text-muted">关于手机主题，提供部分热门品牌热门机型内容</span>
+            <h4><img src="img/shouji.png" width="50px" height="50px" align="top" />手机商城</h4><span class="text-muted">关于手机主题，提供部分热门品牌热门机型内容</span>
             <p><strong>项目时间：</strong>2019-03 至 2019-06</p>
             <p><strong>前端技术：</strong>静态页面使用Html+CSS+JavaScript，使用JQuery实现部分动画效果与事件发生，数据交互使用Ajax</p>
             <p><strong>后台数据：</strong>后台使用PHP+Mysql进行数据的增删改查</p>
@@ -104,7 +103,7 @@
 
 <!-- part 3-->
 <div class="area_info">
-    <h3 class="text-muted">下面是各个项目作品的页面效果展示...</h3>
+    <h3 class="text-muted"><img src="img/zhanshi.png" width="55px" height="55px" align="top" />下面是各个项目作品的页面效果展示...</h3>
 </div>
 <div id="slideimg" class="carousel slide" data-ride="carousel">
     <ul class="carousel-indicators">
@@ -160,8 +159,8 @@
     function NowTime() {
         var timer = new Date();
         var year = timer.getFullYear();
-        var mon = timer.getMonth();
-        var day = timer.getDay();
+        var mon = timer.getMonth() + 1;
+        var day = timer.getDate();
         var hour = timer.getHours();
         var min = timer.getMinutes();
         var sec = timer.getSeconds();
