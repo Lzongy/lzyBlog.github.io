@@ -1,0 +1,153 @@
+*{margin: 0;padding: 0}
+nav{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+nav li{
+    list-style-type: none;
+    display: inline;
+}
+.email_btn{
+    width: auto;
+    height: 40px;
+    border:1px solid cornflowerblue;
+    color: cornflowerblue;
+    border-radius: 20px;
+    font-size: 17px;
+    background-color: #00000000;
+}
+header{
+    width: 100%;
+    min-height: 840px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header_txt{
+    width: 100%;
+    font-size: 16rem;
+    /*font-family: Arial Black;*/
+    font-family: Chalkboard;
+    font-weight: bold;
+    text-align: center;
+}
+.header_txt  span{
+    margin: auto 15px;
+}
+
+.title_txt{
+    margin: 50px auto;
+}
+.header_btn_txt{
+    margin: 10px auto;
+}
+.header_btn_txt .btn{
+    width: 150px;
+    height: 50px;
+    border:1px solid;
+    border-radius:40px;
+    color: dodgerblue;
+}
+.header_btn_txt .btn:hover{
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
+.personal{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    margin-bottom: 150px;
+}
+.left_container{
+    display: flex;
+    flex-direction: column;
+}
+.profiles{
+    width: 280px;
+    height: 320px;
+    border: 1px;
+    border-radius: 10px;
+    background-color: #FFFFFC;
+    margin: 15px 50%;
+    box-shadow: 5px 5px 8px grey;
+}
+.experience{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 1px;
+    margin: 13px 60%;
+    background-color: #FFFFFC;
+    box-shadow: 5px 5px 8px grey;
+
+}
+.class_major{
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    border: 1px;
+    margin: auto auto;
+    background-color: #FFFFFC;
+    box-shadow: 5px 5px 8px grey;
+}
+.projects{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hopeless,.fruits,.phones{
+    width: 100%;
+    height: 400px;
+    margin:30px auto;
+    display: flex;
+    background-color: whitesmoke;
+}
+.pro_img,.pro_desc{
+    width: 45%;
+    height: auto;
+    margin:auto auto;
+}
+.pro_img img{
+    width: 100%;
+    height: auto;
+    border:1px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.pro_img img:hover{
+    box-shadow: 6px 6px 15px grey;
+    filter: contrast(120%);
+    -webkit-filter: contrast(120%);
+    transform: scale(1.1,1.1);
+}
+.carousel-inner{
+    width: 100%;
+    height: 500px !important;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 500px;
+}
+.area_info{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px ;
+    text-align: center;
+    font-family: "Yuanti SC";
+}
+.area_info h3:hover{
+    color: lightskyblue;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+}
