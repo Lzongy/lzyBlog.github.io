@@ -29,11 +29,11 @@
 <div class="area_info">
     <h3 class="text-muted"><img src="img/nanhai.png" width="55px" height="55px" align="top">首先是介绍自己呀!</h3><a name="personal"></a>
 </div>
-<div class="personal" >
+<div class="personal" style="display: none" >
     <div class="left_container">
     <div class="profiles">
         <p><img src="img/avatar.jpeg" align="top" width="100px" height="100px"> <strong style="font-size: 30px;font-family: 'Yuanti SC'">刘宗源</strong></p>
-        <p class="text-muted">一名即将离校的<b class="text-primary">大三</b>男孩，就读于<b class="text-primary">江西现代职业技术学院</b>，所学专业是<b class="text-primary">软件技术</b></p>
+        <p class="text-muted">一名即将离校的<b class="text-primary">大三</b>男孩，就读于<b class="text-primary">江西现代职业技术学院</b>，所学专业是<b class="text-primary">软件技术</b>,于<b class="text-primary">2020年06月毕业</b></p>
         <p class="text-muted">出生于1999-10-10,江西上饶</p>
         <p class="text-muted">是一个乐观开朗，积极向上的男孩子，努力学习新知识，新技术，踏实学习，使自己的编程能力更强</p>
     </div>
@@ -60,7 +60,7 @@
 <div class="projects">
 
 <!-- hopeless    -->
-    <div class="hopeless">
+    <div class="hopeless" style="display: none">
         <div class="pro_img">
             <img src="img/hopeless1.png">
         </div>
@@ -74,7 +74,7 @@
         </div>
     </div>
 <!--   fruits -->
-    <div class="fruits">
+    <div class="fruits" style="display: none">
         <div class="pro_img">
             <img src="img/fruit1.png">
         </div>
@@ -87,7 +87,7 @@
         </div>
         </div>
 <!--    phones-->
-    <div class="phones">
+    <div class="phones" style="display: none">
         <div class="pro_img">
             <img src="img/phones1.png">
         </div>
@@ -175,5 +175,42 @@
          num<10?num="0"+i:num=i;
          return num;
      }
+     $(document).ready(function () {
+         $(window).scroll(function () {
+             if ($(window).scrollTop()>350){
+                 $('.personal').show('slow')
+             }else{
+                 return false;
+             }
+         })
+     });
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(window).scrollTop()>1150){
+                $('.hopeless').show('slow')
+            }else{
+                return false;
+            }
+        })
+    });
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(window).scrollTop()>1650){
+                $('.fruits').show('slow')
+            }else{
+                return false;
+            }
+        })
+    });
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(window).scrollTop()>2050){
+                $('.phones').show('slow')
+            }else{
+                return false;
+            }
+        })
+    });
+
 </script>
 </html>
