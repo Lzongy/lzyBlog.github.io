@@ -29,7 +29,7 @@
 <div class="area_info">
     <h3 class="text-muted"><img src="img/nanhai.png" width="55px" height="55px" align="top">首先是介绍自己呀!</h3><a name="personal"></a>
 </div>
-<div class="personal" style="display: none" >
+<div class="personal" id="personal" style="display: none" >
     <div class="left_container">
     <div class="profiles">
         <p><img src="img/avatar.jpeg" align="top" width="100px" height="100px"> <strong style="font-size: 30px;font-family: 'Yuanti SC'">刘宗源</strong></p>
@@ -60,7 +60,7 @@
 <div class="projects">
 
 <!-- hopeless    -->
-    <div class="hopeless" style="display: none">
+    <div class="hopeless" id="hopeless" style="display: none">
         <div class="pro_img">
             <img src="img/hopeless1.png">
         </div>
@@ -74,7 +74,7 @@
         </div>
     </div>
 <!--   fruits -->
-    <div class="fruits" style="display: none">
+    <div class="fruits" id="fruits" style="display: none">
         <div class="pro_img">
             <img src="img/fruit1.png">
         </div>
@@ -87,7 +87,7 @@
         </div>
         </div>
 <!--    phones-->
-    <div class="phones" style="display: none">
+    <div class="phones" id="phones" style="display: none">
         <div class="pro_img">
             <img src="img/phones1.png">
         </div>
@@ -175,42 +175,53 @@
          num<10?num="0"+i:num=i;
          return num;
      }
-     $(document).ready(function () {
-         $(window).scroll(function () {
-             if ($(window).scrollTop()>350){
-                 $('.personal').show('slow')
-             }else{
-                 return false;
-             }
-         })
-     });
-    $(document).ready(function () {
-        $(window).scroll(function () {
-            if ($(window).scrollTop()>1150){
-                $('.hopeless').show('slow')
-            }else{
-                return false;
-            }
+// 渐入效果
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;//android终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    if(isAndroid || isiOS){
+        document.getElementById('personal').style.display="";
+        document.getElementById('hopeless').style.display="";
+        document.getElementById('fruits').style.display="";
+        document.getElementById('phones').style.display="";
+    }else {
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 350) {
+                    $('.personal').show('slow')
+                } else {
+                    return false;
+                }
+            })
+        });
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 1150) {
+                    $('.hopeless').show('slow')
+                } else {
+                    return false;
+                }
+            })
+        });
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 1650) {
+                    $('.fruits').show('slow')
+                } else {
+                    return false;
+                }
+            })
+        });
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 2050) {
+                    $('.phones').show('slow')
+                } else {
+                    return false;
+                }
+            })
         })
-    });
-    $(document).ready(function () {
-        $(window).scroll(function () {
-            if ($(window).scrollTop()>1650){
-                $('.fruits').show('slow')
-            }else{
-                return false;
-            }
-        })
-    });
-    $(document).ready(function () {
-        $(window).scroll(function () {
-            if ($(window).scrollTop()>2050){
-                $('.phones').show('slow')
-            }else{
-                return false;
-            }
-        })
-    });
+    }
 
 </script>
 </html>
