@@ -12,7 +12,7 @@ nav li{
     display: inline;
 }
 .email_btn{
-    width: auto;
+    width:100px;
     height: 40px;
     border:1px solid cornflowerblue;
     color: cornflowerblue;
@@ -20,9 +20,26 @@ nav li{
     font-size: 17px;
     background-color: #00000000;
 }
+#contacts{
+    width: 270px;
+    height: 70px;
+    border:1px solid;
+    border-radius: 9px;
+    font-size: 15px;
+    background-color: #f0f0f0;
+    float: right;
+    z-index: 99;
+    visibility: hidden;
+    /*display: none;*/
+    position: relative;
+}
+.email_btn:hover{
+    background-color: cornflowerblue;
+    color: white;
+}
 header{
     width: 100%;
-    min-height: 840px;
+    min-height: 700px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -40,19 +57,19 @@ header{
 }
 
 .title_txt{
-    margin: 50px auto;
+    margin: 20px auto;
 }
 .header_btn_txt{
     margin: 10px auto;
 }
-.header_btn_txt .btn{
+.header_btn_txt .redme_btn{
     width: 150px;
     height: 50px;
     border:1px solid;
     border-radius:40px;
     color: dodgerblue;
 }
-.header_btn_txt .btn:hover{
+.header_btn_txt .redme_btn:hover{
     background-color: cornflowerblue;
     color: white;
     cursor: pointer;
