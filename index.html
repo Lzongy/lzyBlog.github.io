@@ -13,8 +13,13 @@
 <nav>
     <ul>
         <li><img src="img/geren.png" width="40px" height="40px" align="top">小源の个人博客</li>
-        <li style="float: right"><button type="button" class="email_btn">联系邮箱：<span class="text-primary">1060673403@qq.com</span></button></li>
+        <li style="float: right"><button type="button" class="email_btn" >联系我</button></li>
     </ul>
+    <div id="contacts" >
+        <p><img src="img/qq_icon.png" width="25px" height="25px">QQ：<span class="text-primary">1060673403</span></p>
+        <p><img src="img/email.png" width="25px" height="25px">邮箱地址：<span class="text-primary">1060673403@qq.com</span></p>
+    </div>
+
 </nav>
 <header>
     <div class="header_txt">
@@ -22,13 +27,14 @@
         </div>
         </div>
     <div class="header_btn_txt">
-        <a href="#personal"><button type="button" class="btn">开始阅读</button></a>
+        <a href="#personal"><button type="button" class="redme_btn">开始阅读</button></a>
     </div>
 </header>
 <!-- part 1-->
 <div class="area_info">
-    <h3 class="text-muted"><img src="img/nanhai.png" width="55px" height="55px" align="top">首先是介绍自己呀!</h3><a name="personal"></a>
+    <h3 class="text-muted"><img src="img/nanhai.png" width="55px" height="55px" align="top">首先是介绍自己呀!</h3>
 </div>
+<a name="personal"></a>
 <div class="personal" id="personal" style="display: none" >
     <div class="left_container">
     <div class="profiles">
@@ -153,6 +159,9 @@
 </footer>
 </body>
 <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
     window.onload=function(){
         setInterval("NowTime()",1000);
     }
@@ -222,6 +231,13 @@
             })
         })
     }
-
+    var contactbtn=document.getElementsByClassName('email_btn')[0];
+    var contact=document.getElementById('contacts');
+    contactbtn.onmouseover=function () {
+        contact.style.visibility="visible";
+    }
+    contactbtn.onmouseout=function () {
+        contact.style.visibility="hidden";
+    }
 </script>
 </html>
